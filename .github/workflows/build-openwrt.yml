@@ -73,7 +73,7 @@ jobs:
       if: env.UPLOAD_FIRMWARE == 'true' && !cancelled()
       run: |
         cd openwrt/
-        echo ./feeds.conf.default >> $GITHUB_ENV
+        echo "./feeds.conf.default" >> $GITHUB_ENV
         echo "::set-output name=status::success"
 
       env:
